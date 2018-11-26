@@ -99,7 +99,7 @@ namespace Screamer
         [ScreamCondition("IsInTrigger")]
         public static Boolean IsInTrigger(string colName)
         {
-            return IsInFlight() && ScreamCollider.GetCollider(colName);
+            return IsInFlight() && ScreamCollider.colContact;
         }
 
 

@@ -11,6 +11,7 @@ namespace Screamer
         private static Collider[] colArray = UnityEngine.Object.FindObjectsOfType<Collider>();
         private static Collider col;
         private static ScreamCollider _trigger = new ScreamCollider();
+        public static Boolean colContact;
 
         public static ScreamCollider Trigger
         {
@@ -21,10 +22,14 @@ namespace Screamer
         }
         public void OnTriggerEnter(Collider other)
         {
-            if (other.attachedRigidbody == null || !other.CompareTag("Untagged") || other.isTrigger)
+            if (other.attachedRigidbody == null && other.CompareTag("Screamer") && other.isTrigger)
             {
-                
+                colContact = true;
             }
+        }
+        public void OnTriggerExit(Collider other)
+        {
+            colContact = false;
         }
 
         public static Collider GetCollider(string name)
