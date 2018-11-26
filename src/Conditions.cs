@@ -10,6 +10,7 @@ namespace Screamer
     /// </summary>
     public static class Conditions
     {
+        List<Collider> cols = Collider.FindObjectsOfType<Collider>();
         [ScreamCondition("IsInMainMenu")]
         public static Boolean IsInMainMenu()
         {
