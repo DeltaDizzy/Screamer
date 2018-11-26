@@ -49,7 +49,7 @@ namespace Screamer
 
         //What collider should trigger the scream, if any
         [ParserTarget("triggerName", Optional = true)]
-        public String triggerName;
+        public static String triggerName;
 
         // How should the scream get displayed?
         [ParserTarget("type", Optional = false)]

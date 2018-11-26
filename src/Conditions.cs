@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Screamer
@@ -9,6 +10,7 @@ namespace Screamer
     /// </summary>
     public static class Conditions
     {
+        List<Collider> cols = Collider.FindObjectsOfType<Collider>();
         [ScreamCondition("IsInMainMenu")]
         public static Boolean IsInMainMenu()
         {
@@ -96,10 +98,11 @@ namespace Screamer
         }
 
         [ScreamCondition("IsInTrigger")]
-        public static Boolean IsInTrigger()
+        public static Boolean IsInTrigger(string colName)
         {
-
+            return IsInFlight() && ScreamCollider.GetCollider(colName);
         }
+
 
         /// <summary>
         /// Figure out whether a game was newly created
