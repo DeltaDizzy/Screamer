@@ -58,6 +58,7 @@
     <Compile Include="Scream.cs" />
     <Compile Include="ScreamCollider.cs" />
     <Compile Include="Triggers.cs" />
+    <Compile Include="Utils.cs" />
     <Compile Include="Variables.cs" />
   </ItemGroup>
   <ItemGroup>
