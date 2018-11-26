@@ -1,7 +1,9 @@
 ﻿using System;
+using UnityEngine;
 
 namespace Screamer
 {
+    
     /// <summary>
     /// A class that contains multiple definitions for scream conditions
     /// </summary>
@@ -91,6 +93,12 @@ namespace Screamer
         public static Boolean IsNewGame()
         {
             return _isNewGame;
+        }
+
+        [ScreamCondition("IsInTrigger")]
+        public static Boolean IsInTrigger()
+        {
+
         }
 
         /// <summary>

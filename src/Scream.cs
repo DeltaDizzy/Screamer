@@ -47,6 +47,10 @@ namespace Screamer
         [ParserTarget("condition", Optional = false)]
         public StringCollectionParser condition;
 
+        //What collider should trigger the scream, if any
+        [ParserTarget("triggerName", Optional = true)]
+        public String triggerName;
+
         // How should the scream get displayed?
         [ParserTarget("type", Optional = false)]
         public EnumParser<ScreamMessageType> type;
