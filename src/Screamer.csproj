@@ -51,14 +51,12 @@
   <ItemGroup>
     <Compile Include="Actions.cs" />
     <Compile Include="Conditions.cs" />
-    <Compile Include="Events.cs" />
     <Compile Include="ScreamAttributes.cs" />
     <Compile Include="ScreamBehaviour.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scream.cs" />
     <Compile Include="ScreamCollider.cs" />
     <Compile Include="Triggers.cs" />
-    <Compile Include="Utils.cs" />
     <Compile Include="Variables.cs" />
   </ItemGroup>
   <ItemGroup>
