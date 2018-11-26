@@ -20,6 +20,7 @@ SCREAM
     position = <where the message is located on screen (PopupDialog only)>
     title = <A headline for your message>
     message = <Your actual message. Newlines are done using @br>
+	triggerName = <name of trigger collider to trigger a message. optional, but must have IsInTrigger(<collidername>) in conditions to work>
     Actions <A list of button texts and actions (PopupDialog only)>
     {
 
@@ -40,6 +41,7 @@ SCREAM
     title = God
     message = Your system is broken.@br@brHave a nice day. 
     // Other variables: https://github.com/StollD/Screamer/blob/master/src/Variables.cs
+	triggerName = Mk1PodPopup
     Actions
     {
         Action
